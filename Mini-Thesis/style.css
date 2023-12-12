@@ -1,0 +1,184 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Raleway:wght@100;400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 100px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background: #000;
+}
+header img {
+    position: relative;
+    max-width: 10vh;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li {
+    list-style: none;
+}
+header ul li a {
+    display: inline-block;
+    margin-left: 40px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    cursor: pointer;
+}
+.bg {
+    min-height: 100vh;
+    background: url(wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    image-rendering: -webkit-optimize-contrast;
+}
+.textarea1 {
+    position: absolute;
+    top: 25vh;
+    left: 45vh;
+    color: #fff;
+    text-align: center;
+}
+.info {
+    position: absolute;
+    width: 230px;
+    height: 250px;
+    display: flex;
+    padding: 15px 25px;
+    margin: 15px 10px;
+    top: 50vh;
+    left: 10vh;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background: url(5028c53d7103795b6e915f5fa638652b.jpg);
+    object-fit: cover;
+    text-decoration: none;
+    color: #fff;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    animation: TransitionOut 0.75s;
+}
+
+.items {
+    position: absolute;
+    width: 230px;
+    height: 250px;
+    display: flex;
+    padding: 15px 25px;
+    margin: 15px 10px;
+    top: 50vh;
+    left: 41vh;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background: url(6840c8dc17f620c055b9045f15cfffd9.jpg);
+    text-decoration: none;
+    color: #fff;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.feedback {
+    position: absolute;
+    width: 230px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px 25px;
+    margin: 15px 10px;
+    top: 50vh;
+    left: 73vh;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background: url(67cdc1683f91f9916de003ca3c94ef57.jpg);
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+.vlog {
+    position: absolute;
+    width: 230px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px 25px;
+    margin: 15px 10px;
+    top: 50vh;
+    left: 105vh;
+    color: #fff;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background: url(wallpaperflare-cropped-blog.jpg);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+.info:hover {
+    transform: translateY(-10px);
+}
+.items:hover {
+    transform: translateY(-10px);
+}
+.feedback:hover {
+    transform: translateY(-10px);
+}
+.vlog:hover {
+    transform: translateY(-10px);
+}
+
+@keyframes TransitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+.textarea1 .textlogo{
+    font-size: 70px;
+    animation: animate 4s ease-in-out infinite;
+}
+body.home1 {
+    animation: TransitionIn 0.75s;
+}
+
+/* Animation Tutorial Used: https://www.youtube.com/watch?v=Tf6qm5JMUXQ */
+@keyframes  animate {
+    0%,100%{
+        clip-path: polygon(0 0, 19% 14%, 35% 30%, 47% 48%, 59% 57%, 76% 66%, 93% 62%, 100% 54%, 100% 100%, 0 100%);
+    }
+    50% {
+        clip-path: polygon(0 54%, 11% 34%, 23% 24%, 41% 18%, 60% 24%, 71% 35%, 86% 37%, 100% 23%, 100% 100%, 0 100%);
+    }
+}  

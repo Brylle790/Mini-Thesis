@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Raleway:wght@100;400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 100px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background: #000;
+}
+header img {
+    position: relative;
+    max-width: 10vh;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li {
+    list-style: none;
+}
+header ul li a {
+    display: inline-block;
+    margin-left: 40px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    cursor: pointer;
+}
+.bg {
+    display: flex;
+    min-height: 100vh;
+    background: url(403405939_732031211714211_8371491805742180703_n.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: -webkit-optimize-contrast;
+}
+.au-text {
+    position: absolute;
+    height: 135px;
+    top: 15vh;
+    left: 50vh;
+    text-align: center;
+    justify-content: center;
+}
+.au-text #head {
+    font-weight: 800;
+    font-size: 65px;
+}
+.au-text #meet {
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.container {
+    display: flex;
+    column-gap: 20px;
+}
+h5 {
+    text-align: center;
+    padding: 20px;
+}
+.container img {
+    margin-left: 10px;
+    position: relative;
+    justify-content: center;
+    max-width: 30vh;
+}
+.person1 {
+    position: absolute;
+    top: 26vh;
+    left: 11vh;
+    margin: 10px 40px;
+    padding: 10px;
+    border: 2px;
+    background-color: #fff;
+    width: fit-content;
+    border-style: solid;
+    border-radius: 10px;
+    animation: TransitionIn 1.0s;
+}
+.person2 {
+    position: absolute;
+    top: 26vh;
+    left: 50vh;
+    margin: 10px 40px;
+    padding: 10px;
+    border: 2px;
+    background: #fff;
+    width: fit-content;
+    border-style: solid;
+    border-radius: 10px;
+    animation: TransitionIn 1.5s;
+}
+.person3 {
+    position: absolute;
+    top: 26vh;
+    left: 89vh;
+    margin: 10px 40px;
+    padding: 10px;
+    border: 2px;
+    background: #fff;
+    width: fit-content;
+    border-style: solid;
+    border-radius: 10px;
+    animation: TransitionIn 2s;
+}
+.person4 {
+    position: absolute;
+    top: 63vh;
+    left: 11vh;
+    margin: 10px 40px;
+    padding: 10px;
+    border: 2px;
+    background-color: #fff;
+    width: fit-content;
+    border-style: solid;
+    border-radius: 10px;
+    animation: TransitionIn 1.0s;
+}
+.person5 {
+    position: absolute;
+    top: 63vh;
+    left: 50vh;
+    margin: 10px 40px;
+    padding: 10px;
+    border: 2px;
+    background-color: #fff;
+    width: fit-content;
+    border-style: solid;
+    border-radius: 10px;
+    animation: TransitionIn 1.5s;
+}
+.person6 {
+    position: absolute;
+    top: 63vh;
+    left: 89vh;
+    margin: 10px 40px;
+    padding: 10px;
+    border: 2px;
+    background-color: #fff;
+    width: fit-content;
+    border-style: solid;
+    border-radius: 10px;
+    animation: TransitionIn 2s;
+}
+body {
+    animation: TransitionIn 0.5s;
+}
+@keyframes TransitionIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
