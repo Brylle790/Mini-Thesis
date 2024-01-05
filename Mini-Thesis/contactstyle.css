@@ -17,30 +17,39 @@ header {
     justify-content: space-between;
     display: flex;
     align-items: center;
-    background: #000;
+    background: #050302;
 }
 header img {
     position: relative;
-    max-width: 10vh;
+    max-width: 8vh;
 }
-header ul{
+nav a {
     position: relative;
-    display: flex;
-}
-header ul li {
-    list-style: none;
-}
-header ul li a {
-    display: inline-block;
-    margin-left: 40px;
+    padding: 6px 20px;
     text-decoration: none;
     color: #fff;
     font-weight: 800;
-    cursor: pointer;
 }
-body {
-    background-color: #5D3125;
+nav a:hover {
+    color: #986b4b;
 }
+nav a span {
+    position: absolute;
+    top: 0;
+    width: 0;
+    right: 0.1vh;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    border-bottom: 3px solid #986b4b;
+    border-radius: 15px;
+    transform: scale(0) translateY(50px);
+    transition: 0.5s;
+}
+nav a:hover span {
+    transform: scale(1) translateY(0);
+}
+
 .media {
     position: absolute;
     border: 5px #000;
@@ -48,12 +57,12 @@ body {
     background: #fff;
     width: 350px;
     padding: 25px;
-    right: 5vh;
-    top: 42vh;
+    right: 100vh;
+    top: 46vh;
     animation: TransitionIn 1.5s;
 }
 .facebook {
-    padding-bottom: 23px;
+    padding-bottom: 20px;
     display: flex;
     align-items: center;
 }
@@ -61,9 +70,12 @@ body {
     max-width: 3em;
 }
 .facebook p {
+    padding-top: 34px;
     padding: 2px;
     float: right;
+    color: #000;
 }
+
 .instagram {
     display: flex;
     align-items: center;
@@ -75,6 +87,7 @@ body {
 .instagram p {
     padding: 2px;
     float: right;
+    color: #000;
 }
 .twitterX {
     padding-bottom: 20px;
@@ -87,6 +100,7 @@ body {
 .twitterX p {
     padding: 2px;
     float: right;
+    color: #000;
 }
 .content {
     padding: 25px;
@@ -96,8 +110,8 @@ body {
     border-radius: 20px;
     width: 350px;
     height: 254px;
-    top: 42vh;
-    right: 48vh;
+    top: 15vh;
+    right: 100vh;
     animation: TransitionIn 1s;
 }
 .content h2 {
@@ -114,4 +128,12 @@ body {
         opacity: 1;
         transform: translateX(0);
     }
+}
+.bg {
+    display: flex;
+    min-height: 100vh;
+    background: url(Images/346130692_6215172935263533_775699248036606376_n.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
